@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: none;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: hsl(223, 47%, 23%);
+}
+
+.card {
+  max-width: calc(375px - 40px);
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+header {
+  background-color: skyblue;
+  background-image: url(images/illustration-hero.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 160px;
+}
+
+.content .title {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.content .lead {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1.4rem;
+  padding: 0 32px;
+}
+
+.content .price-btn {
+  display: grid;
+  grid-template-areas:
+    "music title change"
+    "music price change";
+  text-align: left;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 12px 16px;
+  border-radius: 10px;
+  width: 90%;
+  margin: auto;
+}
+
+.content .price-btn .icon {
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  background-image: url(images/icon-music.svg);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: music;
+}
+
+.content .price-btn .song-title {
+  font-size: 1em;
+  font-weight: 700;
+  grid-area: title;
+}
+
+.content .price-btn .price {
+  font-size: 1em;
+  grid-area: price;
+  color: hsl(224, 23%, 55%);
+}
+
+.content .price-btn .btn-change {
+  font-size: 1em;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  grid-area: change;
+  justify-self: end;
+  transition: 0.3s;
+}
+
+.content .price-btn .btn-change:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 24px auto;
+}
+
+footer button {
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+footer .pay {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 10px;
+}
+
+footer .pay:hover {
+  background-color: hsl(244, 82%, 68%);
+}
+
+footer .cancel {
+  background-color: transparent;
+  color: hsl(224, 23%, 55%);
+}
+
+footer .cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+
+  header {
+    height: 210px;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .content .title {
+    margin-top: 30px;
+    font-size: 1.5em;
+  }
+
+  .content .lead {
+    padding: 0 40px;
+  }
+}
