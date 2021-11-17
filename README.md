@@ -23,10 +23,10 @@ Users should be able to:
 ### Screenshot
 
 - Mobile ScreenShots
-  ![Mobile-screenshots.png](screenshots/Mobile-screenshot.png)
+  ![Mobile-screenshots.png](https://github.com/DimasAdiPutra/order-summary-component-main/blob/main/screenshots/Desktop-screenshots.png?raw=true)
 
 - Desktop ScreenShots
-  ![Desktop-screenshots.png](screenshots/Desktop-screenshot.png)
+  ![Desktop-screenshots.png](https://github.com/DimasAdiPutra/order-summary-component-main/blob/main/screenshots/Mobile-screenshots.png?raw=true)
 
 ### Link
 
